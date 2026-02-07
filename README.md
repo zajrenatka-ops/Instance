@@ -1,5 +1,7 @@
 # i am vibe coder btw
 code example:
+
+```lua
 local Instance = require(game:GetService(`ReplicatedStorage`).Instance)
 
 local mainGui = Instance.guibase(`ScreenGui`, {
@@ -26,3 +28,4 @@ local mainGui = Instance.guibase(`ScreenGui`, {
 		})
 	}
 })
+```
