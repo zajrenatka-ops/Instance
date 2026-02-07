@@ -29,4 +29,8 @@ local mainGui = Instance.guibase(`ScreenGui`, {
 	}
 })
 ```
+
+# Причина создания
+* Я чертвоски ненавижу React и Roact. Мне не сдались ваши mount и unmount, мне нужен Instance
+
 знайте что я не умею оформлять readme
