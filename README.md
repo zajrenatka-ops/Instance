@@ -1,5 +1,5 @@
-# i am vibe coder btw
-code example:
+# i am vibe coder btw| ВАЙБ КОДИНГ КРУГЛЫЙ ГОД
+code example | пример кода:
 
 ```lua
 local Instance = require(game:GetService(`ReplicatedStorage`).Instance)
@@ -29,3 +29,4 @@ local mainGui = Instance.guibase(`ScreenGui`, {
 	}
 })
 ```
+знайте что я не умею оформлять readme
