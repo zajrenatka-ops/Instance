@@ -1,6 +1,9 @@
-# Instance | Копия Roact/React от Ренатки
+# ⚒️ Instance | Копия Roact/React от Ренатки
 
-**Пример кода:**
+# Причина создания:
+* Я чертвоски ненавижу React и Roact. Мне не сдались ваши *mount* и *unmount*, мне нужен *Instance* и точка.
+
+# Пример кода:
 ```lua
 local Instance = require(game:GetService(`ReplicatedStorage`).Instance)
 
@@ -29,8 +32,5 @@ local mainGui = Instance.guibase(`ScreenGui`, {
 	}
 })
 ```
-
-# Причина создания
-* Я чертвоски ненавижу React и Roact. Мне не сдались ваши mount и unmount, мне нужен Instance
 
 знайте что я не умею оформлять readme хд
