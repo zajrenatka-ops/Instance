@@ -1,16 +1,16 @@
 local m = {}
-local event = require(script.Event)
 
-local values = script.Parent:WaitForChild(`Values`)
+local event = require(script.Event)
+local debugmode = false
 
 local print = function(...)
-	if values.DebugMode.Value == true then
-		print(`[AdminPanel/Instance]:`, ...)
+	if debugmode then
+		print(`[Instance]:`, ...)
 	end
 end
 local warn = function(...)
-	if values.DebugMode.Value == true then
-		warn(`[AdminPanel/Instance]:`, ...)
+	if debugmode then
+		warn(`[Instance]:`, ...)
 	end
 end
 
@@ -43,6 +43,17 @@ end
 
 function m.new(objectname:string, props:any, childs:any)
 	print(objectname, props, childs)
+	
+	if typeof(props) ~= `table` then
+		warn(`Второй аргумент не table.`)
+		props = {}
+	end
+	
+	if typeof(childs) ~= `table` then
+		warn(`Третий аргумент не table.`)
+		childs = {}
+	end
+	
 	if m.isobjectexists(objectname) == false then
 		error(`Объект с именем {objectname} не существует.`, 2)
 		return
@@ -51,7 +62,7 @@ function m.new(objectname:string, props:any, childs:any)
 	local instance = Instance.new(objectname)
 	m.props(instance, props)
 	
-	instancechildren(instance, childs or {})
+	instancechildren(instance, childs)
 	
 	return instance
 end
