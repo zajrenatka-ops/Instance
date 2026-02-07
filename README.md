@@ -1,6 +1,6 @@
-# i am vibe coder btw| ВАЙБ КОДИНГ КРУГЛЫЙ ГОД
-code example | пример кода:
+# Instance | Копия Roact/React от Ренатки
 
+**Пример кода:**
 ```lua
 local Instance = require(game:GetService(`ReplicatedStorage`).Instance)
 
@@ -33,4 +33,4 @@ local mainGui = Instance.guibase(`ScreenGui`, {
 # Причина создания
 * Я чертвоски ненавижу React и Roact. Мне не сдались ваши mount и unmount, мне нужен Instance
 
-знайте что я не умею оформлять readme
+знайте что я не умею оформлять readme хд
