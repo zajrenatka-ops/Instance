@@ -22,7 +22,7 @@ setmetatable(Event, {
 })
 
 function Event.isEvent(value)
-	return type(value) == "table" and value.__type == EVENT_MARKER
+	return type(value) == `table` and value.__type == EVENT_MARKER
 end
 
 return Event
