@@ -19,12 +19,15 @@ m.Event = event
 function m.props(object:Object, props:any)
 	for key, value in pairs(props) do
 		if event.isEvent(key) then
-			print(key.name)
-			if object[key.name] then
+			
+			if key.name == `OnServerInvoke` then
+				object.OnServerInvoke = value
+			else
 				object[key.name]:Connect(function(...)
 					value(object, ...)
 				end)
 			end
+
 		else
 			object[key] = value
 		end
