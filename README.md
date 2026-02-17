@@ -36,7 +36,7 @@ local TestPart:Part = Instance.new(`Part`, {
 	}
 })
 
-# Получить модуль: https://create.roblox.com/store/asset/129028739508373 либо require(129028739508373)
 ```
+# Получить модуль: https://create.roblox.com/store/asset/129028739508373 либо require(129028739508373)
 
 знайте что я не умею оформлять readme хд
